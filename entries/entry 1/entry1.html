@@ -1,69 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My first HTML page</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check My Birthmarks</title>
+    <style>
+        body {
+            background-color: #400000;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
+        .container {
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 50px;
+            color: #FFFFFF;
+            filter: blur(2px);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            justify-items: center;
+            margin-bottom: 50px;
+        }
+
+        .grid-item {
+            font-size: 1.5em;
+        }
+
+        .start-btn {
+            font-size: 2em;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #FFFFFF;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .start-btn:hover {
+            color: #ff0000;
+        }
+    </style>
+</head>
 <body>
 
-  <h1>This is heading 1</h1>
-  <h2>This is heading 2</h2>
-  <h3>This is heading 3</h3>
-  <h4>This is heading 4</h4>
-  <h5>This is heading 5</h5>
-  <h6>This is heading 6</h6>
+    <div class="container">
+        <h1>CHECK MY BIRTHMARKS</h1>
+        
+        <div class="grid">
+            <div class="grid-item">BACK</div>
+            <div class="grid-item">RIGHT ARM</div>
+            <div class="grid-item">STOMACH</div>
+            <div class="grid-item">CHEST</div>
+            <div class="grid-item">FACE</div>
+            <div class="grid-item">FOOT</div>
+            <div class="grid-item">LEG</div>
+            <div class="grid-item">LEFT ARM</div>
+            <div class="grid-item">HAUNCH</div>
+        </div>
 
-  <p>This is a paragraph</p>
+        <button class="start-btn">START</button>
+    </div>
 
-  To break<br>lines<br>in a<br>paragraph,<br>use the br element.
-
-  <hr>
-  The hr tag creates a horizontal line in an HTML page.
-
-  <em>This is emphasized text</em>
-
-  <strong>This is strong text</strong>
-
-  <!--This is a comment. Comments are not displayed in the browser-->
-
-  <ol>
-    <li>This is an</li>
-    <li>Ordered</li>
-    <li>List</li>
-  </ol>
-
-  <ul>
-    <li>This is an</li>
-    <li>Unordered</li>
-    <li>List</li>
-  </ul>
-
-  The <code>code element</code> example
-
-  The <pre>                                    * p r e* * </pre> example
-
-  The <em>em element</em> example
-
-  The <mark>mark element</mark> example
-
-  The <small>small element</small> example
-
-  The <strong>strong element</strong> example
-
-  The <sub>sub element</sub> example
-
-  The <sup>sup element</sup> example
-
-  <input type="radio" name="rad"> Radio input
-
-  <input type="checkbox"> Checkbox input
-
-  Text input <input type="text" value="default value that goes on and on without stopping or punctuation">
-
-  <a href="http://www.newschool.edu">This is a link</a>
-
-  This is an image <img src="imgs/dog.jpg" alt="A cool dog">
 </body>
 </html>
