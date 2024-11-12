@@ -1,0 +1,86 @@
+body {
+    background-color: #ff0000; 
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: colorChange 10s infinite; 
+    overflow: hidden;
+}
+
+
+@keyframes colorChange {
+    0% { background-color: #ff0000; } 
+    20% { background-color: #ffff00; } 
+    40% { background-color: #00ff00; } 
+    60% { background-color: #0000ff; } 
+    80% { background-color: #800080; } 
+    100% { background-color: #ff0000; } 
+}
+
+
+.info-box {
+    background-color: black; 
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 450px; 
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+    position: relative;
+}
+
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2; 
+}
+
+.back-button img {
+    width: 170px; 
+    height: auto;
+    cursor: pointer;
+}
+
+
+.exit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2; 
+}
+
+.exit-button img {
+    width: 170px; 
+    height: auto;
+    cursor: pointer;
+}
+
+
+.yeah-image {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    animation: fadeInOut 2s infinite ease-in-out; 
+}
+
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+

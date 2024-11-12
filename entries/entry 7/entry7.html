@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Users/sandy/Desktop/chen_c1ix_f24/entries/entry 7/assets/designurbirthmark.png">
+    <link rel="stylesheet" href="/Users/sandy/Desktop/chen_c1ix_f24/entries/entry 7/assets/entry7.css">
+</head>
+<body>
+
+    <!-- 标题部分，现使用PNG图像代替 -->
+    <img src="/Users/sandy/Desktop/chen_c1ix_f24/entries/entry 7/assets/designurbirthmark.png" alt="Design Your Birthmarks" class="header-img">
+
+    <!-- 退出按钮 -->
+    <img src="file:///Users/sandy/Desktop/chen_c1ix_f24/entries/entry%207/assets/exit.png" class="exit-btn" onclick="exitPage()" alt="Exit">
+
+    <!-- 左侧形状 -->
+    <div class="shapes-left">
+        <div class="shape circle" draggable="true"></div>
+        <div class="shape ellipse" draggable="true"></div>
+        <div class="shape rectangle" draggable="true"></div>
+        <div class="shape square" draggable="true"></div>
+        <div class="shape trapezoid" draggable="true"></div>
+        <div the "shape heart" draggable="true"></div>
+        <div class="shape star" draggable="true"></div>
+        <div class="shape smile" draggable="true"></div>
+    </div>
+
+    <!-- 右侧形状 -->
+    <div class="shapes-right">
+        <div class="shape circle" draggable="true"></div>
+        <div class="shape ellipse" draggable="true"></div>
+        <div class="shape rectangle" draggable="true"></div>
+        <div class="shape square" draggable="true"></div>
+        <div class="shape trapezoid" draggable="true"></div>
+        <div the "shape heart" draggable="true"></div>
+        <div class="shape star" draggable="true"></div>
+        <div class="shape smile" draggable="true"></div>
+    </div>
+
+    <!-- 上传照片功能 -->
+    <div class="upload-container">
+        <label for="photo-upload" class="upload-label">Upload Your Selfie</label>
+        <input type="file" id="photo-upload" accept="image/*" onchange="displayPhoto(event)">
+    </div>
+    <div id="photo-display"></div>
+
+    <script src="/Users/sandy/Desktop/chen_c1ix_f24/entries/entry 7/assets/entry7.js"></script>
+</body>
+</html>
