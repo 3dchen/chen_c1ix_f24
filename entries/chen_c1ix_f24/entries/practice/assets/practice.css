@@ -1,0 +1,16 @@
+body{background-color: azure;}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkkhaki;
+    font-size: 100px;
+    padding: auto;
+    text-align: center;
+}
+
+p{
+    color: darkolivegreen;
+}
+.test{
+    font: 900;
+    color: darkorchid;
+}

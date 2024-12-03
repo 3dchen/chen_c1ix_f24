@@ -1,0 +1,94 @@
+/* 页面整体样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red; /* 整个页面为红色背景 */
+    position: relative;
+    min-height: 100vh;
+}
+
+/* 标题样式 */
+.header {
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 退出按钮样式 */
+.exit-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
+}
+
+/* 内容区域样式 */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* 便签样式 */
+.sticky-note {
+    background-color: #ffdd00;
+    border: 1px solid #f5c518;
+    padding: 15px;
+    margin: 10px 0;
+    max-width: 80%;
+    width: fit-content;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 互动输入框和按钮样式 */
+.input-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    background-color: red; /* 底部背景同页面一致 */
+}
+
+.input-field {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black; /* 按钮背景为黑色 */
+    color: white; /* 字体颜色为白色 */
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

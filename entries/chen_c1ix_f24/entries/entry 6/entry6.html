@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthmark Stories</title>
+    <link rel="stylesheet" href="assets/entry6.css">
+</head>
+<body>
+
+    <!-- 标题部分 -->
+    <div class="header">
+        Share Your Stories About Birthmarks
+        <!-- 退出按钮 -->
+        <img src="assets/exit.png" class="exit-btn" onclick="exitPage()" alt="Exit">
+    </div>
+
+    <!-- 内容展示区域 -->
+    <div class="content" id="content-area">
+        <!-- 空白区域，用于展示便签 -->
+    </div>
+
+    <!-- 互动输入框和提交按钮，固定在页面底部 -->
+    <div class="input-container">
+        <input type="text" id="user-input" class="input-field" placeholder="Share your story here...">
+        <button class="submit-btn" onclick="submitStory()">Submit</button>
+    </div>
+
+    <script>
+        // 退出按钮功能，返回主页
+        function exitPage() {
+            window.location.href = "file:///Users/sandy/Desktop/chen_c1ix_f24/index.html";
+        }
+
+        // 提交故事并生成便签效果
+        function submitStory() {
+            const contentArea = document.getElementById('content-area');
+            const userInput = document.getElementById('user-input');
+            const storyText = userInput.value.trim();
+
+            // 检查输入内容是否为空
+            if (storyText === "") {
+                alert("Please enter a story before submitting!");
+                return;
+            }
+
+            // 创建便签元素
+            const stickyNote = document.createElement('div');
+            stickyNote.classList.add('sticky-note');
+            stickyNote.textContent = storyText;
+
+            // 将便签添加到内容区域
+            contentArea.appendChild(stickyNote);
+
+            // 清空输入框
+            userInput.value = "";
+
+            // 保存故事到本地存储
+            saveStory(storyText);
+        }
+
+        // 保存故事到本地存储
+        function saveStory(story) {
+            let stories = JSON.parse(localStorage.getItem('stories')) || [];
+            stories.push(story);
+            localStorage.setItem('stories', JSON.stringify(stories));
+        }
+
+        // 加载本地存储中的故事
+        function loadStories() {
+            const contentArea = document.getElementById('content-area');
+            let stories = JSON.parse(localStorage.getItem('stories')) || [];
+
+            // 为每个故事生成便签
+            stories.forEach(story => {
+                const stickyNote = document.createElement('div');
+                stickyNote.classList.add('sticky-note');
+                stickyNote.textContent = story;
+                contentArea.appendChild(stickyNote);
+            });
+        }
+
+        // 页面加载时，显示之前保存的故事
+        window.onload = loadStories;
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    background-color: #ff0000; 
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-container img.face-img {
+    width: 700px; 
+    height: auto;
+    margin-bottom: 60px; 
+}
+
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+}
+
+.image-row img {
+    width: 300px; 
+    height: auto;
+}
+
+
+.back-img {
+    width: 170px; 
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}

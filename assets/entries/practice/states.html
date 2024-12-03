@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Animation</title>
+    <style>
+      /* 页面背景颜色 */
+      body {
+        background-color: #f0f4f8; /* 柔和的浅灰蓝色背景 */
+        margin: 0;
+        font-family: 'Courier New', Courier, monospace; /* 打字机样式的字体 */
+        color: #333; /* 字体颜色为深灰 */
+      }
+
+      /* Container styles */
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100vh;
+      }
+
+      /* Google and Youtube link styles */
+      a {
+        text-decoration: none; /* 去掉下划线 */
+        color: #1a73e8; /* Google蓝色 */
+      }
+
+      a:hover {
+        color: #d93025; /* 鼠标悬停时的颜色 */
+      }
+
+      /* Google link animation */
+      .google {
+        font-size: 32px; /* 字体增大 */
+        animation: slideInLeft 2s ease-in-out infinite alternate;
+        margin-bottom: 20px;
+      }
+
+      /* Youtube link animation */
+      .youtube {
+        font-size: 32px; /* 字体增大 */
+        animation: slideInRight 2s ease-in-out infinite alternate;
+        margin-bottom: 20px;
+      }
+
+      /* Circle animation */
+      .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #ff6b6b; /* 柔和的红色 */
+        animation: bounce 1.5s ease-in-out infinite;
+      }
+
+      /* Pill animation */
+      .pill {
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #4ecdc4; /* 柔和的青绿色 */
+        animation: fadeIn 3s ease-in-out infinite;
+      }
+
+      /* Keyframes for animations */
+      @keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInRight {
+        0% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-50px);
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="google">
+        <a href="https://google.com" target="_blank">Google</a>
+      </div>
+
+      <div class="youtube">
+        <a href="https://youtube.com" target="_blank">YouTube</a>
+      </div>
+
+      <div class="circle"></div>
+
+      <div class="pill"></div>
+    </div>
+  </body>
+</html>
