@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 269.66 380.9">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-2" points="166.29 216.85 114.95 208.91 79.29 246.71 70.98 195.42 24.02 173.19 70.22 149.44 76.85 97.91 113.72 134.51 164.78 124.89 141.36 171.27 166.29 216.85"/>
+  <polygon class="cls-1" points="231.37 265.17 207.25 283.73 208.86 314.12 183.75 296.92 155.35 307.85 163.95 278.65 144.78 255.01 175.21 254.17 191.76 228.64 201.96 257.31 231.37 265.17"/>
+</svg>
+<div>
+  <img src="assets/Artboard 1.svg">
+</div>

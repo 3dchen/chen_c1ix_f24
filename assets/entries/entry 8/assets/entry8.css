@@ -1,0 +1,35 @@
+body {
+    background-color: red;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#title {
+    width: auto;
+    height: 300px;
+    margin-top: 20px;
+}
+#exit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 200px;
+}
+#notebook {
+    width: 500px;
+    height: auto;
+    cursor: pointer;
+}
+#luck {
+    width: 500px;
+    height: auto;
+    display: none;
+    cursor: pointer;
+}
+#footer {
+    margin-bottom: 20px;
+}
