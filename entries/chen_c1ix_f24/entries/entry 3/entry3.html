@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="assets/entry3.css"> <!-- 引入外部CSS文件 -->
+</head>
+<body>
+
+    
+    <div class="back-button">
+        <a href="file:///Users/sandy/Desktop/chen_c1ix_f24/entries/entry%201/entry1.html">
+            <img src="assets/back.png" alt="Back Button">
+        </a>
+    </div>
+
+    
+    <div class="info-box">
+        A woman with a mole on the left corner of her mouth is very lucky, it is easy to attract the eye of the opposite sex, and this kind of woman is very feminine, has its own unique charm, and also likes to attract the opposite sex, they are charming and not lack of style.
+    </div>
+
+  
+    <div class="exit-button">
+        <a href="file:///Users/sandy/Desktop/chen_c1ix_f24/index.html">
+            <img src="assets/exit.png" alt="Exit Button">
+        </a>
+    </div>
+
+    <script>
+       
+        let yeahCount = 0;
+        let maxYeahCount = 50; 
+        const body = document.body;
+
+        function addYeahImage() {
+            if (yeahCount < maxYeahCount) {
+               
+                const img = document.createElement('img');
+                img.src = '/Users/sandy/Desktop/chen_c1ix_f24/entries/entry%203/assets/yeah.png'; // yeah.png的路径
+                img.classList.add('yeah-image');
+                
+               
+                img.style.top = Math.random() * window.innerHeight + 'px';
+                img.style.left = Math.random() * window.innerWidth + 'px';
+                
+                
+                body.appendChild(img);
+                
+                yeahCount++;
+                
+             
+                setTimeout(addYeahImage, 500); 
+            }
+        }
+
+        
+        addYeahImage();
+    </script>
+
+</body>
+</html>

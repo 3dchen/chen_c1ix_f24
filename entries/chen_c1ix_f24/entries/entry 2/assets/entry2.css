@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ff0000; 
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.container img {
+    width: 300px; 
+    height: auto;
+    filter: brightness(50%);
+}
+
+
+.info-box {
+    position: absolute;
+    bottom: 10%; 
+    background-color: rgba(0, 0, 0, 1); 
+    color: white;
+    padding: 20px;
+    border-radius: 5px; 
+    width: 350px; 
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+
+.nav-buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.nav-buttons img {
+    width: 170px; 
+    height: auto;
+    cursor: pointer;
+}
+
+
+.exit-button {
+    position: absolute;
+    top: 10px;
+    right: 20px; 
+}
+
+.exit-button img {
+    width: 170px; 
+    height: auto;
+    cursor: pointer;
+}
+
+
+.xuanfu {
+    position: absolute;
+    bottom: 0; 
+    width: 40vw; 
+    height: auto;
+    animation: circleAround 12s infinite ease-in-out;
+}
+
+@keyframes circleAround {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(50vw); 
+    }
+    50% {
+        transform: translateX(-50vw); 
+    }
+    75% {
+        transform: translateX(25vw); 
+    }
+}

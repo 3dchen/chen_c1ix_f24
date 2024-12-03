@@ -1,0 +1,151 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: red; /* 背景颜色改为红色 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 头部图片 */
+.header-img {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* 退出按钮 */
+.exit-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* 左侧形状容器 */
+.shapes-left {
+    position: fixed;
+    left: 20px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 右侧形状容器 */
+.shapes-right {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 通用形状样式 */
+.shape {
+    width: 50px;
+    height: 50px;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* 各种形状样式 */
+.shape.circle {
+    border-radius: 50%;
+}
+
+.shape.ellipse {
+    border-radius: 50%;
+    width: 70px;
+    height: 40px;
+}
+
+.shape.rectangle {
+    width: 70px;
+    height: 50px;
+}
+
+.shape.square {
+    width: 50px;
+    height: 50px;
+}
+
+.shape.trapezoid {
+    width: 60px;
+    height: 30px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+    background-color: #FFD700;
+}
+
+.shape.heart {
+    width: 60px;
+    height: 60px;
+    clip-path: path('M30 15 Q50 0, 70 15 Q90 30, 30 90 Q-30 30, 10 15 Z');
+    background-color: #FF69B4;
+}
+
+.shape.star {
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: #FFD700;
+}
+
+.shape.smile {
+    width: 60px;
+    height: 60px;
+    clip-path: circle(50% at 50% 50%);
+    background: radial-gradient(circle at bottom, #FFD700, #FF6347);
+}
+
+/* 上传容器样式 */
+.upload-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.upload-label {
+    display: inline-block;
+    font-size: 16px;
+    color: #555;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: #ccc;
+}
+
+#photo-upload {
+    display: none;
+}
+
+#photo-display {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#photo-display img {
+    max-width: 300px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,59 @@
+body {
+    background-color: #ff0000;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+/* Title image moved to the right */
+.title-img {
+    width: 500px; /* Increased size */
+    height: auto;
+    margin-bottom: 50px;
+    position: relative;
+    left: 100px; /* Moves image to the right */
+}
+
+/* Enlarging start.png image and moving it to the right */
+.start-img {
+    width: 300px; /* Increased size for start.png */
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    left: 100px; /* Moves start image to the right as well */
+}
+
+.start-img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image when hovered */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    justify-items: center;
+    margin-bottom: 50px;
+    position: relative;
+    top: -100px; /* Moves text above the images */
+}
+
+.grid-item {
+    font-size: 1.5em;
+}
+
+/* Styling for clickable links */
+.grid-item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Change color on hover */
+.grid-item a:hover {
+    color: #ffff00; /* Yellow on hover */
+}
